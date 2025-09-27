@@ -3,30 +3,24 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define a = Character("Aisha", color="purple")
+define odd = Character("Mean")
 
 # The game starts here.
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
+    show aisha at right
+    show mean at left
+    with fade
+    a "Hi, I'm Aisha!"
+    odd "Who Are You?"
+    "...well this is awkward."
+    hide mean
+    with dissolve
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    a "They just disappeared/ Where did they go?"
 
     # This ends the game.
 
