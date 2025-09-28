@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define a = Character("Aisha", color="purple")
+define among = Character("Aisha")
 define odd = Character("Ghost")
 
 # The game starts here.
@@ -11,16 +11,16 @@ define odd = Character("Ghost")
 label start:
     scene bg creepy
     show aisha at right
-    show boy at left
+    show ghost at left
     with fade
-    a "Hi, I'm Aisha!"
-    odd "Who Are You?"
-    "...well this is awkward."
+    odd "Welcome to a game of death!!! There is no cancellation option and no preparation can save you."
+    among "Who Are You?"
+    odd "Good Luck.. You'll need it."
     hide mean
     with dissolve
     # These display lines of dialogue.
 
-    a "They just disappeared/ Where did they go?"
+    among "They just disappeared/ Where did they go?"
 
     # This ends the game.
 
