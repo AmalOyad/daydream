@@ -4,14 +4,14 @@
 # name of the character.
 
 define a = Character("Aisha", color="purple")
-define odd = Character("Mean")
+define odd = Character("Ghost")
 
 # The game starts here.
 
 label start:
-    scene bg room
+    scene bg creepy
     show aisha at right
-    show mean at left
+    show boy at left
     with fade
     a "Hi, I'm Aisha!"
     odd "Who Are You?"
